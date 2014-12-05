@@ -11,8 +11,60 @@ var bio = {
 		generic : "generic info" 
 	},
 	pictureURL : "images/fry.jpg",
-	skills : ["football manager on fm15", "software developer", "sunday league level footballer"]
+	skills : ["football manager on fm15", "software developer", "sunday league level footballer"],
+	welcomeMsg : "you are welcome!!!"
 }
+
+var work = {};
+wor.position = "Developer";
+work.employer = "Company";
+work.years = "0.4"
+
+var education = {};
+education["name"] = "Some University"
+education["years"] = "2007 - 2010"
+education["city"] = "Northern city"
+
+
+var educationJson = {
+	schools: [
+		{
+			name: "schoolA",
+			location: "school location",
+			degree: "Bsc",
+			major: "majored!",
+			dates: "bla",
+			url: "www.schoola.com"
+		},
+		{
+			name: "schoolB",
+			location: "school b location",
+			degree: "A-levels",
+			major: "majored!",
+			dates: "bla",
+			url: "www.schoolb.com"
+		}
+	],
+	onlineCourses: [
+		{
+			title: "Front End Nanodegree",
+			school: "Udacity",
+			dates: "bla",
+			url: ","
+		}
+	]
+};
+
+var projects = [
+	{
+		title: "Sample Project One",
+		dates: "bla"
+		description: "A project where I did a few things",
+		images: [ "image1/url", "image2/url" ]
+	}
+];
+
+/*
 
 var formattedName = HTMLheaderName.replace("%data%", bio.name);
 var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
@@ -26,6 +78,7 @@ var formattedLocation = HTMLlocation.replace("%data%", bio.contactInfo.location)
 //var formattedContactGeneric = HTMLcontactGeneric.replace("%data%", bio.contactInfo.generic);
 
 var formattedBioPic = HTMLbioPic.replace("%data%", bio.pictureURL);
+var formattedWelcomeMsg = HTMLWelcomeMsg.replace("%data%", bio.welcomeMsg);
 
 $("#header").append(HTMLskillsStart);
 for (var i = 0; i < bio.skills.length; i++) {	
@@ -49,3 +102,5 @@ $("#footerContacts").append(formattedGithub);
 $("#footerContacts").append(formattedTwitter);
 $("#footerContacts").append(formattedLocation);
 //$("#topContacts").append(formattedContactGeneric);
+
+*/
